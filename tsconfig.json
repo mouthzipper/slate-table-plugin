@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "lib": ["esnext", "dom"],
+    "target": "ES2018",
+    "lib": ["ES2018", "dom"],
     "outDir": "lib",
     "jsx": "react",
     "module": "commonjs",
