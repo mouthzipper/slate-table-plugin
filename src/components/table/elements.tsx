@@ -300,7 +300,7 @@ const TableComponent: React.FC<{
         onDragStart={e => e.preventDefault()}
         onMouseDown={e => {
           const cell = (e.target as HTMLBaseElement).closest('td');
-          const key = cell?.getAttribute('data-key') || '';
+          const key = cell.getAttribute('data-key') || '';
           setStartKey(key);
         }}
         onMouseMove={e => {

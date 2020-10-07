@@ -134,7 +134,7 @@ export const HorizontalToolbar: React.FC<{
     setCols(colsArray.filter(item => item.width));
   }, [editor, table, tableNode]);
 
-  const maxWidth = useMemo(() => table.closest('div')?.offsetWidth, [table]);
+  const maxWidth = useMemo(() => table.closest('div').offsetWidth, [table]);
 
   const onHandleDrag = useCallback(
     ({ item, index }) => {
@@ -152,7 +152,7 @@ export const HorizontalToolbar: React.FC<{
         const tableWidthAfterChanged = table.offsetWidth + changedWidth;
 
         if (item.el && maxWidth && tableWidthAfterChanged < maxWidth) {
-          const dragger = ref.current?.querySelector(
+          const dragger = ref.current.querySelector(
             `#horizontal-dragger-item-${index}`,
           ) as HTMLElement;
 
@@ -208,7 +208,7 @@ export const HorizontalToolbar: React.FC<{
           );
         }
 
-        const dragger = ref.current?.querySelector(
+        const dragger = ref.current.querySelector(
           `#horizontal-dragger-item-${index}`,
         ) as HTMLElement;
         const draggerWidth = dragger.offsetWidth;
@@ -327,7 +327,7 @@ export const VerticalToolbar: React.FC<{
         if (item.el) {
           const minHeight = options.defaultHeight;
 
-          const dragger = ref.current?.querySelector(
+          const dragger = ref.current.querySelector(
             `#vertical-dragger-item-${index}`,
           ) as HTMLElement;
 
@@ -386,7 +386,7 @@ export const VerticalToolbar: React.FC<{
           );
         }
 
-        const dragger = ref.current?.querySelector(
+        const dragger = ref.current.querySelector(
           `#vertical-dragger-item-${index}`,
         ) as HTMLElement;
 
