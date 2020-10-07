@@ -1,6 +1,5 @@
 import React, { HTMLAttributes } from 'react';
 import { NodeEntry } from 'slate';
-import './ui.css';
 interface TableCardbarProps extends HTMLAttributes<HTMLDivElement> {
 }
 export declare const TableCardbar: React.FC<TableCardbarProps>;

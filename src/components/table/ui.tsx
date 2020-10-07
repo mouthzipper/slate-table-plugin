@@ -35,7 +35,7 @@ import {
 import cx from 'classnames';
 import { splitedTable } from './selection';
 import { options } from './options';
-import './ui.css';
+// import './ui.css';
 
 interface TableCardbarProps extends HTMLAttributes<HTMLDivElement> {}
 

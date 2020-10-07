@@ -19,7 +19,7 @@ import { createContent } from './creator';
 import { TableCardbar, HorizontalToolbar, VerticalToolbar } from './ui';
 import cx from 'classnames';
 import { isInSameTable } from './utils';
-import './table.css';
+// import './table.css';
 
 export const withTable = (editor: Editor) => {
   const { addMark, removeMark, deleteBackward, deleteFragment } = editor;
